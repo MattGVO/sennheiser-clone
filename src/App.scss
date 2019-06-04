@@ -1,0 +1,9 @@
+@import './vars';
+@import './components/Header/Header';
+@import './components/Footer/Footer';
+
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+*{
+  font-family: 'Karla', Arial, Helvetica, sans-serif;
+}

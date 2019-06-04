@@ -1,0 +1,36 @@
+$header-border: #0085bf;
+$blue-highlight: #1e96d4;
+$dark-gray: #111;
+$mid-gray: #414141;
+$light-gray: #ebebeb;
+$whiteish: #fff;
+
+//Flex vars
+$r: row;
+$c: column;
+$w: wrap;
+$nw: nowrap;
+$fs: flex-start;
+$fe: flex-end;
+$c: center;
+$sa: space-around;
+$se: space-evenly;
+$sb: space-between;
+$bl: baseline;
+
+
+
+
+@mixin flex( $jc: flex-start,$ai: stretch, $direction: row, $wrap: nowrap, $ac: stretch ){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $jc;
+    align-items: $ai;
+    align-content: $ac;
+}
+
+// @mixin size($size){
+//     height: $size;
+//     width: $size;
+// }

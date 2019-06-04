@@ -1,0 +1,35 @@
+header{
+   
+    border-top: solid 5px;
+    border-color: $header-border;
+    @include flex($c,$c);
+    padding: 0 2rem;
+    height: 10vh;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .header-content{
+        min-width: 80%;
+        @include flex($sb,$c);
+    }
+
+}
+
+.links{
+    @include flex($se,$c)
+    width: 50%;
+    svg, h4{
+        transition: all 200ms;
+    }
+    svg:hover{
+        stroke: $header-border;
+    }
+    h4:hover{
+        color: $header-border;
+    }
+}
+
+.search{
+    transform: translateX()
+}
