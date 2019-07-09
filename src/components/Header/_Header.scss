@@ -3,7 +3,7 @@ header{
     border-top: solid 5px;
     border-color: $header-border;
     @include flex($c,$c);
-    padding: 0 2rem;
+    // padding: 0 2rem;
     height: 10vh;
     a{
         text-decoration: none;
@@ -11,16 +11,24 @@ header{
     }
     .header-content{
         min-width: 80%;
+        height: 100%;
         @include flex($sb,$c);
+    }
+    #logo{
+        height:  4vh;
     }
 
 }
 
 .links{
-    @include flex($se,$c)
+    @include flex($se,$c);
     width: 50%;
     svg, h4{
         transition: all 200ms;
+        cursor: pointer;
+    }
+    svg + svg {
+        transform: scaleX(-1);
     }
     svg:hover{
         stroke: $header-border;

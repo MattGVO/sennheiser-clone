@@ -1,0 +1,4 @@
+.Categories{
+    height: 200vh;
+    @include flex($fs,$c,$col);
+}
