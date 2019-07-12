@@ -1,8 +1,51 @@
 .Gallery{
-    height: 100vh;
-    background: $mid-gray;
-    @include flex($c,$c);
-    h1{
-        color: white;
+    position: relative;
+    div:focus, button:focus{
+        outline: none;
     }
+    .Arrow:hover{
+        div{
+            border-color: $header-border;
+        }
+    }
+    .Arrow{
+        border: none;
+        position: absolute;
+        z-index: 2;
+        height: 100%;
+        width: 100px;
+        background:none;
+        div{
+            transition: all 50ms;
+            margin: 0;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            border-top: solid $whiteish;
+            border-left: solid $whiteish;
+            transform: rotate(-45deg) 
+            // transform: 
+    
+        }
+    }
+    .Left{
+        div{
+            left: 35px;
+        }
+    }
+    .Right{
+        right: 35px;
+        div{
+            right: 0;
+            transform: rotate(45deg) rotateY(180deg);
+        }
+    }
+    .Slide{
+        height: 100vh;
+
+        background: $mid-gray;
+        @include flex($c,$c);
+        
+    }
+    
 }
